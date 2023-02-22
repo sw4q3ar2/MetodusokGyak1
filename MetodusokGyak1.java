@@ -8,17 +8,17 @@ public class MetodusokGyak1 {
         String szoveg = String.format("az elso 10 szam osszege: %d", osszeg );
         kiiras(szoveg+"\n");
         
-        int a = 3;
-        int b = 4;
-        int c = 2;
-        int d = 1;
+        int a = 5;
+        int b = 5;
         
-
-        osszeg = osszead(a, b, c, d);
-        szoveg = String.format("%d + %d + %d + %d = %d\n", a, b, c, d, a + b + c + d);
-        kiiras(szoveg);
         
-        osszeg = (int) Math.sqrt(a + b + c);
+        // 4 szam osszege
+        osszeg = osszead(1, osszead(2, osszead(3,4)));
+        kiiras("1+2+3+4="+osszeg+"\n");
+        
+        // gyok
+        osszeg = (int) Math.sqrt(osszead(2, osszead(3,4)));
+        kiiras("2+3+4 gyoke="+osszeg+"\n");
         
     }
     
@@ -30,8 +30,8 @@ public class MetodusokGyak1 {
         return osszeg;
     }
     
-    public static int osszead(int a, int b, int c , int d) {
-        return a+b+c+d;
+    public static int osszead(int a, int b) {
+        return a+b;
     }
     
     private static void kiiras(String szoveg){
