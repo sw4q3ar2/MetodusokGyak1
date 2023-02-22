@@ -1,6 +1,6 @@
 package metodusok;
 
-public class MetodusokGyak2 {
+public class Equalizer {
     
     public static void main(String[] args) {
         
