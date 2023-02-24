@@ -13,23 +13,23 @@ public class Equalizer {
     public static void equalizer_5_sor() {
         
         eq();
+        eq(12);
         eq();
-        eq();
-        eq();
+        eq(2);
         eq();
         
     }
     
     public static void eq() {
         int db = rnd.nextInt(3,8);
-        String szin = "\u001B[45m";
-        for (int i = 0; i < db; i++) {
-            System.out.print(szin + " ");
-        }
-        System.out.println("");
+        eq(db);
     }
     
     public static void eq(int hossz) {
-        
+        String szin = "\u001B[45m";
+        for (int i = 0; i < hossz; i++) {
+            System.out.print(szin + " ");
+        }
+        System.out.println("");
     }
 }
